@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galeri Bibit | Greentouch Indonesia</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f9f4;
+      margin: 0;
+      color: #333;
+    }
+
+    /* Menu Navigasi */
+    .sticky-menu {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #1b5e20;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .sticky-menu a {
+      background: #2e7d32;
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 14px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .sticky-menu a:hover {
+      background: #256528;
+      transform: scale(1.05);
+    }
+
+    .sticky-menu a.active {
+      background: #0d3f14;
+      border: 2px solid #a5d6a7;
+    }
+
+    header {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    /* Galeri Grid */
+    .galeri {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+
+    .box {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .box:hover {
+      transform: scale(1.03);
+    }
+
+    .box img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      display: block;
+      background: #e0eee0; /* Warna cadangan jika gambar belum ada */
+    }
+
+    .box-info {
+      padding: 10px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: bold;
+      background: white;
+    }
+
+    /* WhatsApp Melayang */
+    .wa-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 50px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+      z-index: 10000;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    footer {
+      background: #2e7d32;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+      margin-top: 40px;
+    }
+
+    .footer-nav a {
+      color: #a5d6a7;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="sticky-menu">
+  <a href="index.html">🏠 Beranda</a>
+  <a href="katalog.html">📦 Katalog</a>
+  <a href="galeri.html" class="active">🌱 Galeri</a>
+  <a href="kontak.html">📞 Kontak</a>
+  <a href="tentang.html">ℹ️ Tentang</a>
+</nav>
+
+<header>
+  <h1>Galeri Bibit Tanaman</h1>
+  <p>Koleksi Foto Bibit Unggul Greentouch Indonesia</p>
+</header>
+
+<section>
+  <div class="galeri">
+    <div class="box"><img src="galeri1.jpg" alt="Bibit 1"><div class="box-info">Koleksi 1</div></div>
+    <div class="box"><img src="galeri2.jpg" alt="Bibit 2"><div class="box-info">Koleksi 2</div></div>
+    <div class="box"><img src="galeri3.jpg" alt="Bibit 3"><div class="box-info">Koleksi 3</div></div>
+    <div class="box"><img src="galeri4.jpg" alt="Bibit 4"><div class="box-info">Koleksi 4</div></div>
+    <div class="box"><img src="galeri5.jpg" alt="Bibit 5"><div class="box-info">Koleksi 5</div></div>
+    <div class="box"><img src="galeri6.jpg" alt="Bibit 6"><div class="box-info">Koleksi 6</div></div>
+    <div class="box"><img src="galeri7.jpg" alt="Bibit 7"><div class="box-info">Koleksi 7</div></div>
+    <div class="box"><img src="galeri8.jpg" alt="Bibit 8"><div class="box-info">Koleksi 8</div></div>
+    <div class="box"><img src="galeri9.jpg" alt="Bibit 9"><div class="box-info">Koleksi 9</div></div>
+    <div class="box"><img src="galeri10.jpg" alt="Bibit 10"><div class="box-info">Koleksi 10</div></div>
+    <div class="box"><img src="galeri11.jpg" alt="Bibit 11"><div class="box-info">Koleksi 11</div></div>
+    <div class="box"><img src="galeri12.jpg" alt="Bibit 12"><div class="box-info">Koleksi 12</div></div>
+    <div class="box"><img src="galeri13.jpg" alt="Bibit 13"><div class="box-info">Koleksi 13</div></div>
+    <div class="box"><img src="galeri14.jpg" alt="Bibit 14"><div class="box-info">Koleksi 14</div></div>
+    <div class="box"><img src="galeri15.jpg" alt="Bibit 15"><div class="box-info">Koleksi 15</div></div>
+    <div class="box"><img src="galeri16.jpg" alt="Bibit 16"><div class="box-info">Koleksi 16</div></div>
+    <div class="box"><img src="galeri17.jpg" alt="Bibit 17"><div class="box-info">Koleksi 17</div></div>
+    <div class="box"><img src="galeri18.jpg" alt="Bibit 18"><div class="box-info">Koleksi 18</div></div>
+    <div class="box"><img src="galeri19.jpg" alt="Bibit 19"><div class="box-info">Koleksi 19</div></div>
+    <div class="box"><img src="galeri20.jpg" alt="Bibit 20"><div class="box-info">Koleksi 20</div></div>
+    <div class="box"><img src="galeri21.jpg" alt="Bibit 21"><div class="box-info">Koleksi 21</div></div>
+    <div class="box"><img src="galeri22.jpg" alt="Bibit 22"><div class="box-info">Koleksi 22</div></div>
+    <div class="box"><img src="galeri23.jpg" alt="Bibit 23"><div class="box-info">Koleksi 23</div></div>
+    <div class="box"><img src="galeri24.jpg" alt="Bibit 24"><div class="box-info">Koleksi 24</div></div>
+    <div class="box"><img src="galeri25.jpg" alt="Bibit 25"><div class="box-info">Koleksi 25</div></div>
+    <div class="box"><img src="galeri26.jpg" alt="Bibit 26"><div class="box-info">Koleksi 26</div></div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-nav">
+    <a href="index.html">Beranda</a> |
+    <a href="katalog.html">Katalog</a> |
+    <a href="galeri.html">Galeri</a> |
+    <a href="kontak.html">Kontak</a>
+  </div>
+  <p style="font-size: 12px; margin-top: 15px;">&copy; 2026 Greentouch Indonesia</p>
+</footer>
+
+<a href="https://wa.me/6285211228860?text=Halo%20Greentouch%20Indonesia" class="wa-float" target="_blank">
+  💬 Chat Admin
+</a>
+
+</body>
+</html>

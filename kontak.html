@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hubungi Kami | Greentouch Indonesia</title>
+  <style>
+    :root {
+      --primary: #2e7d32;
+      --dark-green: #1b5e20;
+      --light-green: #f4f9f4;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background: var(--light-green);
+      margin: 0;
+      color: #333;
+    }
+
+    /* Menu Navigasi */
+    .sticky-menu {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--dark-green);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 8px;
+      padding: 12px 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+
+    .sticky-menu a {
+      background: var(--primary);
+      color: #ffffff;
+      text-decoration: none;
+      padding: 10px 16px;
+      border-radius: 20px;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .sticky-menu a.active {
+      background: #0d3f14;
+      border: 1px solid #a5d6a7;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    section {
+      max-width: 800px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .contact-container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .contact-item {
+      margin-bottom: 25px;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .contact-item:last-child { border-bottom: none; }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 12px 24px;
+      margin-top: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+      width: 100%;
+      max-width: 250px;
+    }
+
+    .btn-wa { background: #25D366; }
+    .btn-wa:hover { background: #1ebe5d; transform: scale(1.02); }
+    
+    .btn-email { background: #1976d2; }
+    .btn-email:hover { background: #1565c0; transform: scale(1.02); }
+
+    .phone-number {
+      font-size: 18px;
+      color: var(--primary);
+      font-weight: bold;
+      display: block;
+      margin-top: 10px;
+    }
+
+    /* Map Box */
+    .map-box {
+      margin-top: 20px;
+      overflow: hidden;
+      border-radius: 12px;
+      border: 5px solid white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    footer {
+      background: var(--dark-green);
+      color: white;
+      text-align: center;
+      padding: 30px;
+      margin-top: 50px;
+    }
+
+    footer a { color: #a5d6a7; text-decoration: none; font-weight: bold; }
+
+    @media (min-width: 768px) {
+      .contact-container { grid-template-columns: 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav class="sticky-menu">
+  <a href="index.html">🏠 Beranda</a>
+  <a href="katalog.html">📦 Katalog</a>
+  <a href="galeri.html">🌱 Galeri</a>
+  <a href="kontak.html">📞 Kontak</a>
+  <a href="tentang.html">ℹ️ Tentang</a>
+</nav>
+
+<header>
+  <h1>Hubungi Kami</h1>
+  <p>Konsultasi & Pemesanan Bibit Tanaman </p>
+</header>
+
+<section>
+  <div class="contact-container">
+    <div class="card">
+      <div class="contact-item">
+        <strong>WhatsApp</strong><br>
+        <a class="btn btn-wa" href="https://wa.me/6285211228860" target="_blank">
+          💬 Chat WhatsApp
+        </a>
+        <span class="phone-number">0852 1122 8860</span>
+      </div>
+
+      <div class="contact-item">
+        <strong>Telepon / SMS</strong><br>
+        <span class="phone-number">08997 993 909</span>
+      </div>
+
+      <div class="contact-item">
+        <strong>Email</strong><br>
+        <a class="btn btn-email" href="mailto:benyaku@gmail.com">
+          ✉️ Kirim Email
+        </a>
+      </div>
+    </div>
+
+    <div class="card">
+  <strong>Lokasi Kami</strong>
+  <p style="font-size: 14px; color: #666; margin-bottom: 10px;">
+    Rajagaluh, Kabupaten Majalengka, Jawa Barat.
+  </p>
+  
+  <div class="map-box">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15849.231932314544!2d108.33758065!3d-6.7322409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f23c6eeed846d%3A0xb12ef030bc3e648e!2sRajagaluh%2C%20Kec.%20Rajagaluh%2C%20Kabupaten%20Majalengka%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1700000000000!5m2!1sid!2sid" 
+      width="100%" 
+      height="100%" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy">
+    </iframe>
+  </div>
+  
+  <a href="https://www.google.com/maps/search/Rajagaluh+Majalengka" target="_blank" style="display:inline-block; margin-top:15px; font-size: 14px; color: #2e7d32; font-weight: bold; text-decoration: none; border: 1px solid #2e7d32; padding: 8px 15px; border-radius: 5px;">
+    📍 Buka Petunjuk Arah
+  </a>
+</div>
+</section>
+
+<footer>
+  <p>&copy; 2026 Greentouch Indonesia</p>
+  <a href="index.html">⬅ Kembali ke Beranda</a>
+</footer>
+
+<script>
+  // Script Aktif Menu Otomatis
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll('.sticky-menu a');
+    const current = window.location.pathname.split("/").pop() || "index.html";
+
+    links.forEach(link => {
+      if (link.getAttribute("href") === current) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Kami | Greentouch Indonesia</title>
+  <style>
+    :root {
+      --primary: #2e7d32;
+      --dark: #1b5e20;
+      --light: #f4f9f4;
+    }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: var(--light);
+      margin: 0;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    /* Menu Navigasi */
+    .sticky-menu {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--dark);
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      padding: 12px 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    .sticky-menu a {
+      background: var(--primary);
+      color: white;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 25px;
+      font-size: 14px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .sticky-menu a:hover {
+      background: #388e3c;
+      transform: scale(1.05);
+    }
+
+    .sticky-menu a.active {
+      background: #0d3f14;
+      border: 2px solid #a5d6a7;
+    }
+
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    header h1 { margin: 0; font-size: 2.5em; }
+
+    section {
+      max-width: 900px;
+      margin: -30px auto 40px; /* Membuat card agak naik ke header */
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    h2 {
+      color: var(--primary);
+      border-bottom: 2px solid #eee;
+      padding-bottom: 10px;
+      margin-top: 30px;
+    }
+
+    .highlight-box {
+      background: #e8f5e9;
+      padding: 20px;
+      border-left: 5px solid var(--primary);
+      margin: 20px 0;
+      font-style: italic;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul li {
+      margin-bottom: 15px;
+      padding-left: 35px;
+      position: relative;
+    }
+
+    ul li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      background: var(--primary);
+      color: white;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 22px;
+      font-size: 12px;
+    }
+
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 40px 20px;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #a5d6a7;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      margin-bottom: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="sticky-menu">
+  <a href="index.html">🏠 Beranda</a>
+  <a href="katalog.html">📦 Katalog</a>
+  <a href="galeri.html">🌱 Galeri</a>
+  <a href="kontak.html">📞 Kontak</a>
+  <a href="tentang.html">ℹ️ Tentang</a>
+</nav>
+
+<header>
+  <h1>Greentouch Indonesia</h1>
+  <p>Mitra Terpercaya untuk Hijaukan Nusantara</p>
+</header>
+
+<section>
+  <div class="card">
+    <h2>Profil Perusahaan</h2>
+    <p>
+      <strong>Greentouch Indonesia</strong> adalah penyedia bibit tanaman buah dan bibit kayu unggul yang berbasis pada kualitas dan kepercayaan. Dengan pengalaman lebih dari <strong>10 tahun</strong>, kami telah melayani banyak pelanggan dari hobiis rumahan hingga proyek penghijauan instansi pemerintah di berbagai daerah di indonesia.
+    </p>
+
+    <div class="highlight-box">
+      "Kami percaya bahwa setiap pohon yang ditanam adalah warisan berharga untuk masa depan. Kualitas bibit adalah kunci utamanya."
+    </div>
+
+    <p>
+      Setiap bibit yang keluar dari penangkaran kami telah melewati seleksi ketat dan proses perawatan profesional. Kami memastikan daya tumbuh maksimal agar setiap investasi hijau Anda memberikan hasil yang memuaskan.
+    </p>
+
+    <h2>Mengapa Memilih Kami?</h2>
+    <ul>
+      <li><strong>Kualitas Teruji:</strong> Varietas bibit dijamin asli dan memiliki genetika unggul.</li>
+      <li><strong>Tim Ahli:</strong> Didukung oleh tenaga pembibitan yang berpengalaman belasan tahun.</li>
+      <li><strong>Skala Pengiriman:</strong> Melayani pesanan ritel maupun partai besar untuk kebutuhan tender/proyek.</li>
+      <li><strong>Jangkauan Nasional:</strong> Sistem packing khusus yang menjamin bibit tetap dalam kondisi baik sampai tempat di seluruh wilayah Indonesia.</li>
+      <li><strong>Edukasi Berkelanjutan:</strong> Kami memberikan konsultasi gratis bagi Anda yang ingin memulai penanaman.</li>
+    </ul>
+
+    <h2>Komitmen Kami</h2>
+    <p>
+      Greentouch Indonesia tidak hanya menjual bibit, kami berkomitmen pada pertanian berkelanjutan. Kami aktif dalam gerakan pelestarian lingkungan dan pemberdayaan petani lokal untuk menciptakan ekosistem yang lebih hijau dan produktif bagi generasi mendatang.
+    </p>
+  </div>
+</section>
+
+<footer>
+  <a href="index.html">⬅ Kembali ke Beranda</a>
+  <p>&copy; 2026 Greentouch Indonesia &bull; Menyemai Kehijauan Nusantara</p>
+</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll('.sticky-menu a');
+    const current = window.location.pathname.split("/").pop() || "index.html";
+    links.forEach(link => {
+      if (link.getAttribute("href") === current) {
+        link.classList.add("active");
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
