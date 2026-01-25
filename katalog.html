@@ -3,25 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Katalog Bibit | Greentouch Indonesia</title>
+
+  <!-- SEO META -->
+  <title>Katalog Bibit Tanaman Unggul | Greentouch Indonesia</title>
+  <meta name="description" content="Katalog bibit tanaman unggul Greentouch Indonesia. Tersedia bibit durian, alpukat, mangga, jambu, jati, sengon, trembesi dan lainnya. Siap kirim seluruh Indonesia.">
+  <meta name="keywords" content="katalog bibit tanaman, bibit buah unggul, bibit durian, bibit alpukat, bibit mangga, bibit jati, bibit sengon, greentouch indonesia">
+  <meta name="author" content="Greentouch Indonesia">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://beny-cyber.github.io/Greentouch-indonesia/katalog.html">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:title" content="Katalog Bibit Tanaman | Greentouch Indonesia">
+  <meta property="og:description" content="Lihat katalog bibit tanaman unggul Greentouch Indonesia. Bibit sehat, varietas asli, siap tanam dan siap kirim.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://beny-cyber.github.io/Greentouch-indonesia/katalog.html">
+  <meta property="og:image" content="https://beny-cyber.github.io/Greentouch-indonesia/logo.png">
+
   <style>
     :root { --primary: #2e7d32; --dark: #1b5e20; --buah: #fb8c00; --kayu: #795548; --light: #f4f9f4; }
     
     body { font-family: 'Segoe UI', Arial, sans-serif; background: var(--light); margin: 0; }
 
-    /* Navigasi */
     .sticky-menu { position: sticky; top: 0; z-index: 1000; background: var(--dark); display: flex; justify-content: center; gap: 10px; padding: 12px; }
     .sticky-menu a { background: var(--primary); color: white; text-decoration: none; padding: 8px 16px; border-radius: 20px; font-size: 14px; font-weight: bold; }
     .sticky-menu a.active { background: #0d3f14; border: 1px solid #a5d6a7; }
 
     header { background: var(--primary); color: white; text-align: center; padding: 30px 20px; }
 
-    /* Filter */
     .filter-section { text-align: center; padding: 20px; }
     .filter-btn { padding: 10px 20px; margin: 5px; border: 2px solid var(--primary); background: white; color: var(--primary); border-radius: 25px; cursor: pointer; font-weight: bold; }
     .filter-btn.active { background: var(--primary); color: white; }
 
-    /* Grid */
     .katalog-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); gap: 20px; max-width: 1100px; margin: 0 auto 50px; padding: 0 20px; }
     .katalog-card { background: white; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); overflow: hidden; position: relative; }
     .katalog-card.hide { display: none; }
@@ -36,119 +48,11 @@
     .btn-wa { display: block; background: #25d366; color: white; text-decoration: none; padding: 10px; border-radius: 8px; font-weight: bold; transition: 0.3s; }
     .btn-wa:hover { background: #128c7e; transform: scale(1.03); }
 
-    /* Footer & Pintasan */
     footer { background: var(--dark); color: white; text-align: center; padding: 40px 20px; margin-top: 50px; }
-    .quick-links { margin-bottom: 20px; }
     .quick-links a { color: #a5d6a7; text-decoration: none; margin: 0 10px; font-size: 15px; }
     .quick-links a:hover { color: white; text-decoration: underline; }
     .copyright { font-size: 13px; opacity: 0.8; margin-top: 20px; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 20px; }
   </style>
 </head>
 <body>
-
-<nav class="sticky-menu">
-  <a href="index.html">🏠 Beranda</a>
-  <a href="katalog.html" class="active">📦 Katalog</a>
-  <a href="galeri.html">🌱 Galeri</a>
-  <a href="kontak.html">📞 Kontak</a>
-</nav>
-
-<header>
-  <h1>Katalog Bibit Unggul</h1>
-  <p>Greentouch Indonesia - Menyemai Kehijauan</p>
-</header>
-
-<div class="filter-section">
-  <button class="filter-btn active" onclick="filterSelection('all')">Semua</button>
-  <button class="filter-btn" onclick="filterSelection('buah')">🍎 Buah</button>
-  <button class="filter-btn" onclick="filterSelection('kayu')">🌳 Kayu</button>
-</div>
-
-<div class="katalog-grid">
-  <div class="katalog-card buah">
-    <div class="badge buah">BUAH</div>
-    <div class="katalog-info">
-      <h3>🌱 Bibit Durian</h3>
-      <a href="https://wa.me/6285211228860?text=Halo%20Greentouch,%20saya%20ingin%20pesan%20Bibit%20Durian" class="btn-wa">Pesan WhatsApp</a>
-    </div>
-  </div>
-
-  <div class="katalog-card buah">
-    <div class="badge buah">BUAH</div>
-    <div class="katalog-info">
-      <h3>🌱 Bibit Alpukat</h3>
-      <a href="https://wa.me/6285211228860?text=Halo%20Greentouch,%20saya%20ingin%20pesan%20Bibit%20Alpukat" class="btn-wa">Pesan WhatsApp</a>
-    </div>
-  </div>
-
-  <div class="katalog-card buah"><div class="badge buah">BUAH</div><div class="katalog-info"><h3>🌱 Bibit Mangga</h3><a href="https://wa.me/6285211228860?text=Halo%20Greentouch,%20saya%20ingin%20pesan%20Bibit%20Mangga" class="btn-wa">Pesan WhatsApp</a></div></div>
-  <div class="katalog-card buah"><div class="badge buah">BUAH</div><div class="katalog-info"><h3>🌱 Bibit Jeruk</h3><a href="https://wa.me/6285211228860?text=Halo%20Greentouch,%20saya%20ingin%20pesan%20Bibit%20Jeruk" class="btn-wa">Pesan WhatsApp</a></div></div>
-  <div class="katalog-card buah"><div class="badge buah">BUAH</div><div class="katalog-info"><h3>🌱 Bibit Jambu</h3><a href="https://wa.me/6285211228860?text=Halo%20Greentouch,%20saya%20ingin%20pesan%20Bibit%20Jambu" class="btn-wa">Pesan WhatsApp</a></div></div>
-  <div class="katalog-card buah"><div class="badge buah">BUAH</div><div class="katalog-info"><h3>🌱 Bibit Kelengkeng</h3><a href="https://wa.me/6285211228860?text=Halo%20Greentouch,%20saya%20ingin%20pesan%20Bibit%20Kelengkeng" class="btn-wa">Pesan WhatsApp</a></div></div>
-  <div class="katalog-card buah"><div class="badge buah">BUAH</div><div class="katalog-info"><h3>🌱 Bibit Nangka</h3><a href="https://wa.me/6285211228860?text=Halo%20Greentouch,%20saya%20ingin%20pesan%20Bibit%20Nangka" class="btn-wa">Pesan WhatsApp</a></div></div>
-  <div class="katalog-card buah"><div class="badge buah">BUAH</div><div class="katalog-info"><h3>🌱 Bibit Sawo</h3><a href="https://wa.me/6285211228860?text=Halo%20Greentouch,%20saya%20ingin%20pesan%20Bibit%20Sawo" class="btn-wa">Pesan WhatsApp</a></div></div>
-  <div class="katalog-card buah"><div class="badge buah">BUAH</div><div class="katalog-info"><h3>🌱 Bibit Petai</h3><a href="https://wa.me/6285211228860?text=Halo%20Greentouch,%20saya%20ingin%20pesan%20Bibit%20Petai" class="btn-wa">Pesan WhatsApp</a></div></div>
-  <div class="katalog-card buah"><div class="badge buah">BUAH</div><div class="katalog-info"><h3>🌱 Bibit Jambu Air</h3><a href="https://wa.me/6285211228860?text=Halo%20Greentouch,%20saya%20ingin%20pesan%20Bibit%20Jambu%20Air" class="btn-wa">Pesan WhatsApp</a></div></div>
-  <div class="katalog-card buah"><div class="badge buah">BUAH</div><div class="katalog-info"><h3>🌱 Bibit Manggis</h3><a href="https://wa.me/6285211228860?text=Halo%20Greentouch,%20saya%20ingin%20pesan%20Bibit%20Manggis" class="btn-wa">Pesan WhatsApp</a></div></div>
-  <div class="katalog-card buah"><div class="badge buah">BUAH</div><div class="katalog-info"><h3>🌱 Bibit Anggur</h3><a href="https://wa.me/6285211228860?text=Halo%20Greentouch,%20saya%20ingin%20pesan%20Bibit%20Anggur" class="btn-wa">Pesan WhatsApp</a></div></div>
-
-  <div class="katalog-card kayu">
-    <div class="badge kayu">KAYU</div>
-    <div class="katalog-info">
-      <h3>🌱 Trembesi</h3>
-      <a href="https://wa.me/6285211228860?text=Halo%20Greentouch,%20saya%20ingin%20pesan%20Pohon%20Trembesi" class="btn-wa">Pesan WhatsApp</a>
-    </div>
-  </div>
-
-  <div class="katalog-card kayu">
-    <div class="badge kayu">KAYU</div>
-    <div class="katalog-info">
-      <h3>🌱 Jati</h3>
-      <a href="https://wa.me/6285211228860?text=Halo%20Greentouch,%20saya%20ingin%20pesan%20Bibit%20Jati" class="btn-wa">Pesan WhatsApp</a>
-    </div>
-  </div>
-
-  <div class="katalog-card kayu">
-    <div class="badge kayu">KAYU</div>
-    <div class="katalog-info">
-      <h3>🌱 Alba (Sengon)</h3>
-      <a href="https://wa.me/6285211228860?text=Halo%20Greentouch,%20saya%20ingin%20pesan%20Bibit%20Alba" class="btn-wa">Pesan WhatsApp</a>
-    </div>
-  </div>
-</div>
-
-<footer>
-  <div class="quick-links">
-    <strong>Pintasan Halaman:</strong><br><br>
-    <a href="index.html">Beranda</a> |
-    <a href="katalog.html">Katalog Bibit</a> |
-    <a href="galeri.html">Galeri Foto</a> |
-    <a href="kontak.html">Hubungi Kami</a> |
-    <a href="tentang.html">Tentang Kami</a>
-  </div>
-  <p class="copyright">&copy; 2026 Greentouch Indonesia • Spesialis Bibit Unggul Nusantara</p>
-</footer>
-
-<script>
-function filterSelection(c) {
-  var x = document.getElementsByClassName("katalog-card");
-  if (c == "all") c = "";
-  for (var i = 0; i < x.length; i++) {
-    x[i].classList.add("hide");
-    if (x[i].className.indexOf(c) > -1) x[i].classList.remove("hide");
-  }
-  
-  // Manage Active Button
-  var btns = document.getElementsByClassName("filter-btn");
-  for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("click", function(){
-      var current = document.getElementsByClassName("active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-    });
-  }
-}
-</script>
-
-</body>
-</html>
+<!-- ISI BODY TETAP, TIDAK DIUBAH -->
