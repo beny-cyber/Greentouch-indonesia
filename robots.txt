@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://beny-cyber.github.io/Greentouch-indonesia/sitemap.xml
